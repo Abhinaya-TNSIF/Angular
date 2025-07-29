@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<p> welcome to your first standalone Angular component!</p>
+
+<div class="product-card">
+  <h2>{{product.name}}</h2>
+  <p>Price: ${{product.price}}</p>
+  <button (click)="onToggleFavorite()">
+    {{product.isFavorite ? 'Remove from Favorite' : 'Add tp Favorite'}}
+  </button>
+</div>

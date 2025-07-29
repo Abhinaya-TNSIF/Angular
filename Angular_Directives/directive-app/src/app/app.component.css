@@ -1,0 +1,57 @@
+/* Apply a stylish background gradient */
+body {
+  background-color: #440c7c !important;
+  font-family: 'Arial', sans-serif; /* Modern font */
+  color: white; /* Default text color */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center content */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+}
+
+/* First paragraph: Text color change on hover */
+p:first-of-type {
+  font-size: 18px;
+}
+
+p:first-of-type:hover {
+  color: #ffeb3b; /* Yellow on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Second paragraph: Background color change on hover */
+p:nth-of-type(2) {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+p:nth-of-type(2):hover {
+  background-color: rgba(74, 222, 241, 0.5);
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Third paragraph: Button styling */
+p:nth-of-type(3) {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5722; /* Orange color */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+p:nth-of-type(3):hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

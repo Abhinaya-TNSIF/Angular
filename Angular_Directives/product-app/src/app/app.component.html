@@ -1,0 +1,33 @@
+<body>
+  <div>
+    <!-- Display the title of the app (bound from the component's title property) -->
+    <h1>{{ title }}</h1>
+    
+    <!-- Button to trigger the addProducts method when clicked -->
+    <button (click)="addProducts()">Load Products</button>
+
+    <!-- Conditionally render the table if there are products available (products array has more than 0 items) -->
+    <table *ngIf="products.length > 0">
+      <thead>
+        <!-- Table header with columns for Product Name and Price -->
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop through the products array and create a row for each product -->
+        <tr *ngFor="let product of products">
+          <!-- Display the product name in the first column -->
+          <td>{{ product.name }}</td>
+          <!-- Display the product price with ₹ currency symbol in the second column -->
+          <td>₹{{ product.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- If the products array is empty (i.e., no products available), display a message -->
+    <p *ngIf="products.length === 0">No products available.</p>
+  </div>
+</body>
+

@@ -1,0 +1,89 @@
+/* Body background color */
+body {
+  background-color: #08b9ef; /* Set background color */
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Ensure body takes up full viewport height */
+  margin: 0; /* Remove default margin */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+
+/* Title styles */
+h1 {
+  color: #fbfeff;
+  text-align: center;
+  background-color: #090805;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Center the table and button */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Table styling */
+table {
+  border: 2px solid #010007;
+  width: 60%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #2e96ea;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+table th {
+  background-color: #000000;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+table tr:hover {
+  background-color: #efeeeb;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #5a82e8;
+}
+
+/* Style for the "No products available" message */
+p {
+  color: #e74c3c; /* Red color for the text */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da; /* Light red background */
+  border-radius: 8px;
+  border: 1px solid #e74c3c; /* Border matching the text color */
+  margin-top: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+

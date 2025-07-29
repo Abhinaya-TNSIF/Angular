@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<button (click) = "toggleLogin()">Toggle Login </button>
+
+<div *ngIf="isLoggedIn">
+  <h2>Welcome, User!</h2>
+</div>
+
+<div *ngIf="isLoggedIn">
+  <h2>Please log in to continue.</h2>
+</div>
+
+<h3>User List:</h3>
+<ul>
+  <li *ngFor="let user of users">
+    {{user.name}} ({{user.role}})
+  </li>
+</ul>
